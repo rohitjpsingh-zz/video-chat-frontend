@@ -8,9 +8,6 @@ import Phone from "../../assets/phone.gif";
 
 import Teams from "../../assets/teams.mp3";
 import {
-  UserOutlined,
-  CopyOutlined,
-  InfoCircleOutlined,
   PhoneOutlined,
 } from "@ant-design/icons";
 const { Header, Footer, Sider, Content } = Layout;
