@@ -1,0 +1,25 @@
+@import url('antd/dist/antd.css');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap'); */
+@font-face {
+  font-family: Gilroy;
+  src: url(./fonts/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: gilroy-light;
+  src: url(./fonts/gilroy.otf);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  /* margin: 0;
+  padding: 0;
+  font-family: 'Gruppo', cursive; */
+  margin: 0;
+  padding: 0;
+  font-family: Gilroy !important;
+}

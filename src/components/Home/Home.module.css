@@ -1,0 +1,164 @@
+.layoutWrapper {
+  position: relative;
+  color: #5e5e5e;
+  background-color: #00bcd4;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contentWrapper{
+  font-weight: 100;
+  overflow: auto;
+  padding-bottom: 40px;
+}
+.headerWrapper {
+  border-bottom: solid #f1f1f1;
+  background: #177682;
+  border-width: thin;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footerWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: solid #f1f1f1;
+  padding: 10px;
+  background: #414751;
+  border-width: thin;
+  color: #fff;
+}
+
+.videosBlockWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border-bottom: solid 1px #231717;
+}
+
+.videoBlock {
+  border: solid 5px #fff;
+  height: 250px;
+  width: 250px;
+  border-radius: 8px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.videoBlock span {
+  display: block;
+  text-align: center;
+}
+.videoActive {
+  height: 100%;
+  width: 100%;
+  background: #43bb8f;
+  object-fit: cover;
+  position: absolute;
+}
+
+.callerName {
+  font-weight: 400;
+  font-weight: bold;
+  display: flex;
+  background: #37a6ab;
+  color: #ededed;
+  padding: 5px;
+}
+
+.videoActionWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  width: 50%;
+  margin: 15px auto;
+  background: #8fe7e3;
+}
+
+
+.inputName,
+.inputCode {
+  border-radius: 5px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+.startBtn {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.phone {
+  height: 4rem;
+}
+
+.btnDiv .answer {
+  background-color: #29bb89;
+  color: #1e6f5c;
+  font-weight: bold;
+}
+
+.btnDiv .decline {
+  background-color: rgb(250, 30, 14, 0.75);
+  color: #8c0000;
+  font-weight: bold;
+}
+
+.hang {
+  background-color: rgb(250, 30, 14, 0.75) !important;
+  color: #8c0000 !important;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+/* :::::::::::::::::::::: Responsive CSS Code Start ::::::::::::::::::::::::::: */
+
+/* Mobile devices */
+@media screen and (max-device-width: 480px) {
+    .videosBlockWrapper {
+        display: block;
+    }
+    .videoBlock {
+        width: auto;
+    }
+    .container {
+        height: calc(100vh - 100px);
+        overflow: auto;
+    }
+    .videoActionWrapper {
+        width: 80%;        
+        flex-direction: column;
+    }
+
+    .inputName,
+    .inputCode {
+        width: 92%;
+        margin: 5px;
+    }
+
+    .startBtn {
+        width: 100%;
+        margin: 5px;
+    }
+}
+/* iPads, Tablets */
+@media screen and (min-device-width: 481px) and (max-device-width: 767px) {
+}
+/* Small screens, laptops */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+}
+/* Desktops, large screens */
+@media screen and (min-device-width: 1025px) and (max-device-width: 1200px) {
+}
+/* Extra large screens, TV */
+@media screen and (min-device-width: 1201px) {
+}
+
+/* :::::::::::::::::::::: Responsive CSS Code End ::::::::::::::::::::::::::: */
