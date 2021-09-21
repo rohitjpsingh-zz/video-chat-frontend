@@ -39,13 +39,26 @@
   padding: 15px;
   border-bottom: solid 1px #231717;
 }
+.videoContainer {
+  margin: 15px;
+  border: solid 5px #fff;
+  border-radius: 8px;
+}
+
+.videoHeading {
+  text-align: center;
+  border-bottom: solid 1px #177682;
+}
+
+.videoHeading h2 {
+  margin: 0;
+}
 
 .videoBlock {
-  border: solid 5px #fff;
+  /* border: solid 1px #177682; */
   height: 250px;
   width: 250px;
-  border-radius: 8px;
-  margin: 15px;
+  /* border-radius: 8px; */
   position: relative;
   overflow: hidden;
 }
@@ -60,6 +73,20 @@
   background: #43bb8f;
   object-fit: cover;
   position: absolute;
+}
+
+.videoProps, .videoProps2 {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  border-top: solid 1px #177682;
+}
+.videoProps span {
+  cursor: pointer;
+}
+.videoProps span img, .videoProps2 span img {
+  height: 70%;
 }
 
 .callerName {
