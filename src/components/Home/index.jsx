@@ -14,7 +14,7 @@ import VideoOffIcon from "../../assets/video-off.svg";
 
 import Teams from "../../assets/teams.mp3";
 import { PhoneOutlined } from "@ant-design/icons";
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Footer, Content } = Layout;
 
 // const SERVER_URL = "http://localhost:5000/";
 const SERVER_URL = "https://video-chat-code.herokuapp.com/";
@@ -22,7 +22,7 @@ const SOCKET_CLIENT = io(SERVER_URL);
 
 function Home() {
   const [stream, setStream] = useState();
-  const [chat, setChat] = useState([]);
+  // const [chat, setChat] = useState([]);
   const [socketId, setSocketId] = useState("");
   const [name, setName] = useState("");
   const [call, setCall] = useState({});
@@ -252,7 +252,7 @@ function Home() {
                   <video
                     playsInline
                     muted
-                    // onClick={fullScreen}
+                    onClick={fullScreen}
                     ref={myVideo}
                     autoPlay
                     className={`${classes.videoActive}`}
@@ -301,7 +301,7 @@ function Home() {
                   <video
                     playsInline
                     ref={userVideo}
-                    // onClick={fullScreen}
+                    onClick={fullScreen}
                     autoPlay
                     className={`${classes.videoActive}`}
                     style={{
