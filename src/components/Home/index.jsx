@@ -99,10 +99,12 @@ function Home() {
       setShowCallingModal(true);
       setCallerUser(call.from);
     } else setShowCallingModal(false);
-  }, [call.isReceivingCall]);
+  }, [call,callAccepted]);
 
   //full screen
   const fullScreen = (e) => {
+    console.log("userMicStatusL",userMicStatus);
+
     const elem = e.target;
     if (elem.requestFullscreen) {
       elem.requestFullscreen();
@@ -265,20 +267,25 @@ function Home() {
                 )}
               </div>
               <div className={`${classes.videoProps}`}>
-                <span onClick={() => updateMyMic()}>
-                  {myMicStatus ? (
-                    <img src={MicOnIcon} alt="Mic On" />
-                  ) : (
-                    <img src={MicOffIcon} alt="Mic Off" />
-                  )}
-                </span>
-                <span onClick={() => updateMyVideo()}>
-                  {myVideoStatus ? (
-                    <img src={VideoOnIcon} alt="video on icon" />
-                  ) : (
-                    <img src={VideoOffIcon} alt="video off icon" />
-                  )}
-                </span>
+                {stream && (
+                  <>
+                    <span onClick={() => updateMyMic()}>
+                      {myMicStatus ? (
+                        <img src={MicOnIcon} alt="Mic On" />
+                      ) : (
+                        <img src={MicOffIcon} alt="Mic Off" />
+                      )}
+                    </span>
+                    <span onClick={() => updateMyVideo()}>
+                      {myVideoStatus ? (
+                        <img src={VideoOnIcon} alt="video on icon" />
+                      ) : (
+                        <img src={VideoOffIcon} alt="video off icon" />
+                      )}
+                    </span>
+                  </>
+                )}
+
                 {callAccepted && !callEnded && (
                   <>
                     <span>
