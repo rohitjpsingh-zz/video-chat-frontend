@@ -4,9 +4,6 @@
   "homepage": "/",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "antd": "^4.16.13",
     "react": "^17.0.2",
     "react-copy-to-clipboard": "^5.0.4",
@@ -18,9 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts --max_old_space_size=4096 build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "react-scripts --max_old_space_size=4096 build"
   },
   "eslintConfig": {
     "extends": [
@@ -31,7 +26,6 @@
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
       "not op_mini all"
     ],
     "development": [
