@@ -34,7 +34,8 @@
 
 .videosBlockWrapper {
   display: flex;
-  justify-content: center;
+  justify-content: normal;
+  flex-wrap: wrap;
   align-items: center;
   padding: 15px;
   border-bottom: solid 1px #231717;
@@ -43,6 +44,10 @@
   margin: 15px;
   border: solid 5px #fff;
   border-radius: 8px;
+}
+
+.otherUser {
+  border:solid 5px #3949AB;
 }
 
 .videoHeading {
@@ -125,7 +130,10 @@
 .phone {
   height: 4rem;
 }
-
+.btnDiv {
+  display: flex;
+  justify-content: space-between;
+}
 .btnDiv .answer {
   background-color: #29bb89;
   color: #1e6f5c;
